@@ -15,7 +15,10 @@
   background-color: lightblue;
 }
 
-
+.home-logo{
+    background-color: blueviolet;
+    height: 100vh;
+}
 
 /**DESKTOP - Col MD - */
 .col-md-12{

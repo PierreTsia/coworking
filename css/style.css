@@ -97,6 +97,13 @@
     padding : 10px;
     margin: 15px;
 }
+
+@media screen and (max-width:1000px) {
+    .tarif-card {
+        width:90%;
+    }
+    
+}
 /*SERVICES*/
 
 

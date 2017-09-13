@@ -1,10 +1,22 @@
 /*GLOBAL*/
 
-.container,
-.containe-fluid {
-    margin: 0;
-    padding: 0;
+
+
+.titre-container {
+    text-align: center;
 }
+
+.tarif-container {
+    text-align: center;
+}
+
+.wraper-container-fluid {
+    padding-left:0;
+    padding-right:0;
+}
+
+
+
 
 
 /*HOME*/
@@ -14,6 +26,50 @@
 
 
 /*ESPACES*/
+
+/*TARIFS*/
+
+
+#tarifs .container-fluid{
+    background-color: #FFF;
+    color:#fff;
+}
+
+.tarif-ico{
+    max-width: 100px;
+    height: auto;
+}
+
+.tarif-card {
+ 
+ border: 0.5px solid lightgray;
+  width: 60%;
+  margin: 50px auto 50px auto;
+  padding: 15px;
+  
+ 
+  border-radius: 5px;
+  color: #1b244a;
+
+ 
+  box-shadow: 17px 25px 28px -4px rgba(0,0,0,0.21);
+
+
+
+}
+
+.tarif-card span{
+    display: block;
+}
+
+
+.preferential .tarif-ico{
+
+    max-width: 200px;
+    height: auto;
+
+}
+
 
 
 /*SERVICES*/

@@ -13,7 +13,7 @@
 
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/temp.css">
+    <!--<link rel="stylesheet" href="css/temp.css">-->
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -30,7 +30,7 @@
 
 <body>
 
-    <div id="wrapper" class="container-fluid">
+    <div id="wrapper" class="wrapper-container-fluid container-fluid">
 
         <section id="home">
             <div class="container-fluid">
@@ -75,7 +75,7 @@
         </section>
         <section id="espaces">
             <div class="container">
-                <div class="titreI-container col-md-12 col-sm-12 col-xs-12">
+                <div class="titre-container col-md-12 col-sm-12 col-xs-12">
                     <h1>LES ESPACES</h1>
                     <h2>Venez travailler au Coworking La Loupe, vous y trouverez :</h2>
                 </div>
@@ -141,24 +141,57 @@
             </div>
         </section>
         <section id="tarifs">
-            <div class="container">
-                <div class="titre-container col-md-12">
-                    <h1>Tarifs</h1>
 
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <img src="http://via.placeholder.com/120x120" alt="">
-                    <h3>tarif1</h3>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <img src="http://via.placeholder.com/120x120" alt="">
-                    <h3>tarif1</h3>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <img src="http://via.placeholder.com/120x120" alt="">
-                    <h3>tarif1</h3>
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="titre-container col-md-12">
+                        <h1>Tarifs</h1>
+
+                    </div>
+                    <div class="preferential tarif-container col-md-12 col-sm-12 col-xs-12">
+                        <div class="tarif-card">
+                            <h3>Quotidien</h3>
+                            <span class="em-text">Pour un maximum de flexibilité</span>
+                            <img class="tarif-ico" src="img/ico/calendar.svg" alt="">
+
+                            <div class="price-tag">
+                                <span>A partir de</span>
+                                <span>10€ HT</span>
+
+                            </div>
+                            <button class="btn btn-danger">Réserver votre place</button>
+                        </div>
+
+                    </div>
+                    <div class="tarif-container col-md-6 col-sm-6 col-xs-12">
+                        <div class="tarif-card">
+                            <img class="tarif-ico" src="img/ico/calendar.svg" alt="">
+                            <h3>Hebdo (lundi>vendredi)</h3>
+                            <div class="price-tag">
+                                <span>A partir de</span>
+                                <span>10€ HT</span>
+                            </div>
+                            <button class="btn btn-danger">Réserver votre place</button>
+                        </div>
+
+
+                    </div>
+                    <div class="tarif-container col-md-6 col-sm-6 col-xs-12">
+                        <div class="tarif-card">
+                            <img class="tarif-ico" src="img/ico/calendar.svg" alt="">
+                            <h3>Mensuel</h3>
+                            <div class="price-tag">
+                                <span>A partir de</span>
+                                <span>10€ HT</span>
+                            </div>
+                            <button class="btn btn-danger">Réserver votre place</button>
+
+                        </div>
+
+                    </div>
                 </div>
             </div>
+
         </section>
         <section id="booking">
             <div class="container">

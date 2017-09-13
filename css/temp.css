@@ -13,7 +13,7 @@
 
 
 .home-logo {
-    background-color: blueviolet;
+    background-color: red;
     height: 100vh;
 }
 
@@ -60,4 +60,12 @@
 
 .col-xs-8 {
     border: 2px solid greenyellow;
+}
+
+/**SECTION ABOUT - ACCUEIL*/
+.p_accueil{
+    background-color: rgb(251, 251, 251)
+}
+.img-container{
+    margin:auto;
 }

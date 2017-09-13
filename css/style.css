@@ -1,8 +1,11 @@
 /*GLOBAL*/
 
+.container,
+.containe-fluid {
+    margin: auto;
+}
 
-
-.titre-container {
+.titre-container h1 {
     text-align: center;
 }
 
@@ -11,91 +14,122 @@
 }
 
 .wraper-container-fluid {
-    padding-left:0;
-    padding-right:0;
+    padding-left: 0;
+    padding-right: 0;
 }
-
-
-
 
 
 /*HOME*/
 
+#home .container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#home {
+    background: #132347;
+}
+
+.navbar-brand {
+    padding: 5px 15px
+}
+
+.home-img {
+    display: inline;
+}
+
+.home-headings {
+    text-align: center;
+    color: white;
+}
+
+#home .btn {
+    background: transparent;
+    border-radius: 0;
+    border: 3px solid #ffffff;
+    color: #ffffff;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 16px 42px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    transition: all 0.4s;
+}
+
 
 /*ABOUT*/
+
+#about .titre-container {
+    margin: auto;
+}
 
 
 /*ESPACES*/
 
+
 /*TARIFS*/
 
-
-#tarifs .container-fluid{
+#tarifs .container-fluid {
     background-color: #FFF;
-    color:#1b244a;
-    
+    color: #1b244a;
 }
 
-.tarif-ico{
+.tarif-ico {
     max-width: 100px;
     height: auto;
 }
 
 .tarif-card {
- 
- border: 0.5px solid lightgray;
-  width: 60%;
-  margin: 50px auto 50px auto;
-  padding: 15px;
-  border-radius: 5px;
-  color: #1b244a;
-  box-shadow: 17px 25px 28px -4px rgba(0,0,0,0.21);
+    border: 0.5px solid lightgray;
+    width: 60%;
+    margin: 50px auto 50px auto;
+    padding: 15px;
+    border-radius: 5px;
+    color: #1b244a;
+    box-shadow: 17px 25px 28px -4px rgba(0, 0, 0, 0.21);
 }
 
-.tarif-card h3{
-    font-size:2em;
+.tarif-card h3 {
+    font-size: 2em;
     font-weight: 900;
     color: #1b244a;
-    margin:15px;
+    margin: 15px;
 }
 
-.tarif-card p, .em-text{
+.tarif-card p,
+.em-text {
     color: grey;
-    font-size : 1.5em;
-    margin:15px
+    font-size: 1.5em;
+    margin: 15px
 }
 
-
-
-.tarif-card span{
+.tarif-card span {
     display: block;
 }
 
-
-.preferential .tarif-ico{
-
+.preferential .tarif-ico {
     max-width: 200px;
     height: auto;
-    margin:15px
-
+    margin: 15px
 }
 
 .from {
     color: grey;
     font-size: 1em;
-    margin:15px
-
+    margin: 15px
 }
 
 .price {
-    font-size : 2em;
-    color:#1b244a;
+    font-size: 2em;
+    color: #1b244a;
     font-weight: 900;
-    margin:15px
+    margin: 15px
 }
 
 .tarif-card button {
-    padding : 10px;
+    padding: 10px;
     margin: 15px;
 }
 
@@ -115,7 +149,7 @@
 
 @media screen and (max-width:840px)  {
     .tarif-card {
-        width:100%;
+        width: 100%;
     }
     
     .preferential .tarif-ico{
@@ -124,6 +158,8 @@
     }
 
 }
+
+
 /*SERVICES*/
 
 .section-group {

@@ -99,18 +99,30 @@
     margin: 15px;
 }
 
-@media screen and (max-width:1000px) and (min-width:640px) {
+@media screen and (max-width:1000px) and (min-width:840px) {
     .tarif-card {
         width:90%;
+
     }
+
+    .preferential .tarif-ico{
+        
+            max-width: 100px;
+    }  
+    
     
 }
 
-@media screen and (max-width:640px)  {
+@media screen and (max-width:840px)  {
     .tarif-card {
         width:100%;
     }
     
+    .preferential .tarif-ico{
+        
+            max-width: 100px;
+    }
+
 }
 /*SERVICES*/
 

@@ -10,9 +10,12 @@
 
     <!-- Le styles -->
     <link href="css/bootstrap.css" rel="stylesheet">
-
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+<<<<<<< HEAD
+=======
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+>>>>>>> 61b4465e2e39616db7c426ba46184a4c42ecccae
     <!-- <link rel="stylesheet" href="css/temp.css">-->
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -217,29 +220,83 @@
                     <h1>Contactez-nous</h1>
                 </div>
 
-                <div class="text-container col-md-8 col-sm-8 col-xs-12">
+                <div class="text-container col-md-6 col-sm-6 col-xs-12">
 
-                    <form>
-                        <div class="form-group">form</div>
+                    <form id="contact-form" method="post" action="contact.php" role="form">
+
+                        <div class="messages"></div>
+
+                        <div class="controls">
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="form_name">Nom</label>
+                                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Nom" required="required" data-error="Le nom est requis.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="form_email">Email</label>
+                                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Email" required="required" data-error="Une adresse mail valide est requise.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="form_phone">Téléphone</label>
+                                        <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Téléphone">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="form_message">Message</label>
+                                        <textarea id="form_message" name="message" class="form-control" placeholder="Message" rows="4" required="required" data-error="Merci de nous laisser un message."></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="submit" class="btn btn-success btn-send" value="Envoyer">
+                                </div>
+                            </div>
+                        </div>
+
                     </form>
 
                 </div>
-                <div class="col-md-4 col-sm-4 col-xs-12">
-                    <div class="row"><span>Adress</span></div>
-                    <div class="row"><span>Line2</span></div>
-                    <div class="row"><span>Line3</span></div>
-                </div>
-            </div>
-        </section>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <p><a href="https://www.google.fr/maps?q=la+capsule+reims&amp;bav=on.2,or.r_cp.&amp;biw=1440&amp;bih=689&amp;dpr=2&amp;um=1&amp;ie=UTF-8&amp;sa=X&amp;ved=0ahUKEwjqwdqP7_PTAhUE1RoKHV-3AKwQ_AUICCgD"><i class="fa fa-map-marker contact" aria-hidden="true"></i></a>                        La Capsule, 5 rue des marmouzets, 51100 Reims. <br> La Capsule se trouve au 4ème étage de la CCI
+                        de la Marne.</p>
+                    <p><i class="fa fa-clock-o contact" aria-hidden="true"></i>Du lundi au jeudi de 9h à 18h<br> Le vendredi
+                        de 9h à 17h</p>
 
-        <footer>
-            <div class="container">
-                <div class="col-md-6">
-                    <p>Mentions légales</p>
+                    <p><i class="fa fa-phone contact" aria-hidden="true"></i>03 26 50 69 94 </p>
+
+                    <p><i class="fa fa-paper-plane-o contact" aria-hidden="true"></i>contact@reimscoworking.fr</p>
+                    <p><a href="https://www.facebook.com/reimscoworking/?fref=ts"><i class="fa fa-facebook f3" aria-hidden="true"></i></a>
+                        <a href="https://twitter.com/ReimsCoworking"><i class="fa fa-twitter f3" aria-hidden="true"></i></a></p>
+
                 </div>
-                <div class="col-md-6">Liens</div>
             </div>
-        </footer>
+    </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="col-md-6">
+                <p>Mentions légales</p>
+            </div>
+            <div class="col-md-6">Liens</div>
+        </div>
+    </footer>
 
 
 

@@ -2,8 +2,8 @@
 
 .container,
 .containe-fluid {
-    margin: 0;
-    padding: 0;
+    margin: auto;
+}
 }
 
 
@@ -11,6 +11,13 @@
 
 
 /*ABOUT*/
+
+#about.titre-container{
+    width: 50%;
+    margin: auto;
+}
+
+
 
 
 /*ESPACES*/

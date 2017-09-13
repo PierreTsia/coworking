@@ -32,7 +32,8 @@
 
 #tarifs .container-fluid{
     background-color: #FFF;
-    color:#fff;
+    color:#1b244a;
+    
 }
 
 .tarif-ico{
@@ -98,13 +99,24 @@
     margin: 15px;
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1000px) and (min-width:640px) {
     .tarif-card {
         width:90%;
     }
     
 }
+
+@media screen and (max-width:640px)  {
+    .tarif-card {
+        width:100%;
+    }
+    
+}
 /*SERVICES*/
+
+.section-group {
+    text-align: center;
+}
 
 
 /*CONTACT*/

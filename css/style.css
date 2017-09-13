@@ -1,10 +1,29 @@
 /*GLOBAL*/
 
+<<<<<<< HEAD
 .container,
 .containe-fluid {
     margin: auto;
 }
+=======
+
+
+.titre-container {
+    text-align: center;
 }
+
+.tarif-container {
+    text-align: center;
+}
+
+.wraper-container-fluid {
+    padding-left:0;
+    padding-right:0;
+>>>>>>> dev
+}
+
+
+
 
 
 /*HOME*/
@@ -22,8 +41,96 @@
 
 /*ESPACES*/
 
+/*TARIFS*/
 
+
+#tarifs .container-fluid{
+    background-color: #FFF;
+    color:#1b244a;
+    
+}
+
+.tarif-ico{
+    max-width: 100px;
+    height: auto;
+}
+
+.tarif-card {
+ 
+ border: 0.5px solid lightgray;
+  width: 60%;
+  margin: 50px auto 50px auto;
+  padding: 15px;
+  border-radius: 5px;
+  color: #1b244a;
+  box-shadow: 17px 25px 28px -4px rgba(0,0,0,0.21);
+}
+
+.tarif-card h3{
+    font-size:2em;
+    font-weight: 900;
+    color: #1b244a;
+    margin:15px;
+}
+
+.tarif-card p, .em-text{
+    color: grey;
+    font-size : 1.5em;
+    margin:15px
+}
+
+
+
+.tarif-card span{
+    display: block;
+}
+
+
+.preferential .tarif-ico{
+
+    max-width: 200px;
+    height: auto;
+    margin:15px
+
+}
+
+.from {
+    color: grey;
+    font-size: 1em;
+    margin:15px
+
+}
+
+.price {
+    font-size : 2em;
+    color:#1b244a;
+    font-weight: 900;
+    margin:15px
+}
+
+.tarif-card button {
+    padding : 10px;
+    margin: 15px;
+}
+
+@media screen and (max-width:1000px) and (min-width:640px) {
+    .tarif-card {
+        width:90%;
+    }
+    
+}
+
+@media screen and (max-width:640px)  {
+    .tarif-card {
+        width:100%;
+    }
+    
+}
 /*SERVICES*/
+
+.section-group {
+    text-align: center;
+}
 
 
 /*CONTACT*/

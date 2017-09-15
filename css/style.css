@@ -176,12 +176,17 @@ p{
 
 /*SERVICES*/
 
+#services {
+    background-color: rgba(211, 211, 211, 0.2);
+    background-image: url('../img/dots-pattern.png')    
+}
 .section-group {
     text-align: center;
 }
 
 .icon-services {
     font-size : 100px !important;
+    color: #FFA126;
 
 }
 /*CONTACT*/

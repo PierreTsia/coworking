@@ -18,6 +18,15 @@
     padding-right: 0;
 }
 
+h1, h2{
+    font-family: 'Lato', sans-serif;
+}
+
+p{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
 
 /*HOME*/
 
@@ -29,7 +38,8 @@
 }
 
 #home {
-    background: #132347;
+    background: #1fa597;
+    height: 100vh;
 }
 
 .navbar-brand {
@@ -46,18 +56,22 @@
 }
 
 #home .btn {
-    background: transparent;
-    border-radius: 0;
-    border: 3px solid #ffffff;
-    color: #ffffff;
-    font-weight: bold;
-    letter-spacing: 2px;
-    padding: 16px 42px;
+    background-color: #fba858;
+    font-size: 15px;
+    line-height: 2.8;
+    padding: 0 1.5em;
+    text-transform: uppercase;
+    overflow: hidden;
+    border-radius: 3px;
     margin-top: 40px;
     margin-bottom: 20px;
     transition: all 0.4s;
 }
 
+.navbar-custom {
+    background-color: #f8f8f8;
+    height: 75px;
+}
 
 /*ABOUT*/
 

@@ -18,13 +18,27 @@
     padding-right: 0;
 }
 
+<<<<<<< HEAD
 h1,
 h2 {
+=======
+body {
+    font-family: 'Open Sans', sans-serif;
+    color:#35383a;
+}
+h1, h2{
+>>>>>>> dev
     font-family: 'Lato', sans-serif;
+    margin-bottom: 36px;
 }
 
+<<<<<<< HEAD
 p {
     font-family: 'Source Sans Pro', sans-serif;
+=======
+p{
+    font-family: 'Open Sans', sans-serif;
+>>>>>>> dev
 }
 
 
@@ -46,6 +60,11 @@ p {
     padding: 5px 15px
 }
 
+
+.home-logo .img-responsive{
+    height: 350px;
+}
+
 .home-img {
     display: inline;
 }
@@ -56,34 +75,51 @@ p {
 }
 
 #home .btn {
-    background-color: #fba858;
+    background-color: #f9a02e;
     font-size: 15px;
     line-height: 2.8;
     padding: 0 1.5em;
     text-transform: uppercase;
     overflow: hidden;
     border-radius: 3px;
-    margin-top: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 36px;
     transition: all 0.4s;
 }
 
-.navbar-custom {
-    background-color: #f8f8f8;
-    height: 75px;
+.navbar-brand .img-responsive{
+    height: 40px;
 }
 
 
+<<<<<<< HEAD
+=======
+.navbar-custom {
+    background-color: #fbfbfb;
+}
+.navbar-default .navbar-nav > li > a {
+        color: #35383a;
+}
+>>>>>>> dev
 /*ABOUT*/
 
 #about .titre-container {
     margin: auto;
+    padding-top: 36px;
+    line-height: 36px;
 }
 
+<<<<<<< HEAD
 #about {
     height: 100vh;
 }
 
+=======
+#about .img-responsive{
+        max-height: 350px;
+        padding: 36px;
+        padding-right: 50px;
+}
+>>>>>>> dev
 
 /*ESPACES*/
 
@@ -206,7 +242,23 @@ p {
 }
 
 
-/*CONTACT*/
+/*BOOKING*/
+.booking-container{
+    background-color:  #35383a;
+    padding : 0;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
 
+.titre-container-footer h1 {
+   color: white;
+   text-align: center;
+}
+
+.text-container-footer{
+    color: white;
+ }
 
 /*FOOTER*/

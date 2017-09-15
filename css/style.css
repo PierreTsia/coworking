@@ -25,6 +25,7 @@ body {
 h1, h2{
     font-family: 'Lato', sans-serif;
     margin-bottom: 36px;
+    text-align: center;
 }
 
 p{
@@ -197,6 +198,7 @@ p{
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+    padding-bottom: 36px;
 }
 
 .titre-container-footer h1 {
@@ -206,6 +208,38 @@ p{
 
 .text-container-footer{
     color: white;
+    line-height: 36px;
  }
 
+#booking .fa{
+
+    padding-right:10px;
+}
+
+#booking a{
+    color : #b9184d;
+}
+
+.btn-booking {
+    color: #fff;
+    background-color: #f9a02e;
+    border-color: #f9a02e;
+}
+
+#booking{
+    
+}
+
 /*FOOTER*/
+
+.footer_logo{
+    position: relative;
+}
+
+.footer_logo img{
+    height: 100px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}

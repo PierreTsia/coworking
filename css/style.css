@@ -7,6 +7,7 @@
 
 .titre-container h1 {
     text-align: center;
+    font-weight: 900;
 }
 
 .tarif-container {
@@ -18,27 +19,17 @@
     padding-right: 0;
 }
 
-<<<<<<< HEAD
-h1,
-h2 {
-=======
 body {
     font-family: 'Open Sans', sans-serif;
     color:#35383a;
 }
 h1, h2{
->>>>>>> dev
     font-family: 'Lato', sans-serif;
     margin-bottom: 36px;
 }
 
-<<<<<<< HEAD
-p {
-    font-family: 'Source Sans Pro', sans-serif;
-=======
 p{
     font-family: 'Open Sans', sans-serif;
->>>>>>> dev
 }
 
 
@@ -91,61 +82,66 @@ p{
 }
 
 
-<<<<<<< HEAD
-=======
 .navbar-custom {
     background-color: #fbfbfb;
 }
 .navbar-default .navbar-nav > li > a {
         color: #35383a;
 }
->>>>>>> dev
 /*ABOUT*/
 
+#about .container-fluid .container {
+    height: 80vh;
+}
+#about .container {
+    margin-top :200px;
+}
 #about .titre-container {
     margin: auto;
     padding-top: 36px;
     line-height: 36px;
 }
 
-<<<<<<< HEAD
-#about {
-    height: 100vh;
-}
-
-=======
 #about .img-responsive{
         max-height: 350px;
         padding: 36px;
         padding-right: 50px;
 }
->>>>>>> dev
 
 /*ESPACES*/
-
 #espaces {
-    height: 80vh;
+    background-color: rgba(217, 223, 222, 0.2);
+    background-image: url('../img/dots-pattern.png') ;
 }
 
+#espaces .container-fluid .container {
+    height: 80vh;
+    padding-top: 70px;
+    
+}
+
+#espaces .section-group {
+    margin-top: 50px; 
+}
 .icon-espaces {
     max-width: 150px;
 }
 
-.icon-espaces-first {
-    border: 1px solid red;
-    min-width: 200px;
+
+#espaces h3 {
+    font-weight: 900;
 }
 
 
 /*TARIFS*/
 
-#tarifs {
+#tarifs .container-fluid .container {
     height: 100vh;
 }
 
 #tarifs .container-fluid {
     background-color: #FFF;
-    color: #1b244a;
+    
 }
 
 .tarif-ico {
@@ -226,10 +222,23 @@ p{
 
 /*SERVICES*/
 
-#services {
+#services .container-fluid .container {
     height: 80vh;
-    background-color: rgba(217, 223, 222, 0.2);
-    background-image: url('../img/dots-pattern.png') ;
+    padding-top: 70px;
+    
+}
+
+#services .section-group {
+    margin-top: 50px; 
+}
+
+#services {
+    height: 50vh;
+    
+}
+
+#services h3{
+    font-weight: 900;
 }
 
 .section-group {

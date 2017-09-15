@@ -18,14 +18,14 @@
     padding-right: 0;
 }
 
-h1, h2{
+h1,
+h2 {
     font-family: 'Lato', sans-serif;
 }
 
-p{
+p {
     font-family: 'Source Sans Pro', sans-serif;
 }
-
 
 
 /*HOME*/
@@ -73,17 +73,39 @@ p{
     height: 75px;
 }
 
+
 /*ABOUT*/
 
 #about .titre-container {
     margin: auto;
 }
 
+#about {
+    height: 100vh;
+}
+
 
 /*ESPACES*/
 
+#espaces {
+    height: 80vh;
+}
+
+.icon-espaces {
+    max-width: 150px;
+}
+
+.icon-espaces-first {
+    border: 1px solid red;
+    min-width: 200px;
+}
+
 
 /*TARIFS*/
+
+#tarifs {
+    height: 100vh;
+}
 
 #tarifs .container-fluid {
     background-color: #FFF;
@@ -149,46 +171,41 @@ p{
 
 @media screen and (max-width:1000px) and (min-width:840px) {
     .tarif-card {
-        width:90%;
-
+        width: 90%;
     }
-
-    .preferential .tarif-ico{
-        
-            max-width: 100px;
-    }  
-    
-    
+    .preferential .tarif-ico {
+        max-width: 100px;
+    }
 }
 
-@media screen and (max-width:840px)  {
+@media screen and (max-width:840px) {
     .tarif-card {
         width: 100%;
     }
-    
-    .preferential .tarif-ico{
-        
-            max-width: 100px;
+    .preferential .tarif-ico {
+        max-width: 100px;
     }
-
 }
 
 
 /*SERVICES*/
 
 #services {
-    background-color: rgba(211, 211, 211, 0.2);
-    background-image: url('../img/dots-pattern.png')    
+    height: 80vh;
+    background-color: rgba(217, 223, 222, 0.2);
+    background-image: url('../img/dots-pattern.png') ;
 }
+
 .section-group {
     text-align: center;
 }
 
 .icon-services {
-    font-size : 100px !important;
+    font-size: 100px !important;
     color: #FFA126;
-
 }
+
+
 /*CONTACT*/
 
 

@@ -52,6 +52,12 @@ p{
     padding: 5px 15px
 }
 
+.navbar {
+    
+    -webkit-box-shadow: 0px 26px 20px -11px rgba(0,0,0,0.22);
+    -moz-box-shadow: 0px 26px 20px -11px rgba(0,0,0,0.22);
+    box-shadow: 0px 26px 20px -11px rgba(0,0,0,0.22);
+}
 
 .home-logo .img-responsive{
     height: 350px;
@@ -143,6 +149,10 @@ p{
 #tarifs .container-fluid {
     background-color: #FFF;
     
+}
+
+.tarif-container {
+    margin-bottom:50px;
 }
 
 .tarif-ico {

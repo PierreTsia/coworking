@@ -288,14 +288,13 @@ p{
     border-color: #f9a02e;
 }
 
-#booking{
-    
-}
+
 
 /*FOOTER*/
 
 .footer_logo{
     position: relative;
+    top:-50px;
 }
 
 .footer_logo img{

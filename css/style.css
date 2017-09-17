@@ -186,6 +186,11 @@ text-decoration: none;
     margin-bottom:50px;
 }
 
+.tarif-icon{
+    color:orange;
+    line-height: 30;
+    font-size: 100px !important;
+}
     /* COMMON PRICING STYLES */
     
     
@@ -223,6 +228,7 @@ text-decoration: none;
     .panel.price .list-group-item:first-child {
         border-top-right-radius: 0px;
         border-top-left-radius: 0px;
+        height: 130px;
     }
     
     .price .panel-footer {
@@ -246,7 +252,7 @@ text-decoration: none;
     }
 
 
-    /* whites price */
+
 		
 	
 		.price.panel-white>.panel-heading {

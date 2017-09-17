@@ -14,6 +14,12 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/section-scroll.css">
+    
+    
+    <!-- -----Scripts----- -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- <link rel="stylesheet" href="css/temp.css">-->
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -22,22 +28,44 @@
     <![endif]-->
 
     <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
-    <link rel="shortcut icon" href="../assets/ico/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
 
     <div id="wrapper" class="wrapper-container-fluid">
+        <script type="text/javascript">
+            $(document).ready(function () {
+                function scroll_to_top(div) {
+                    $(div).click(function () {
+                        $('html,body').animate({ scrollTop: 0 }, 'slow');
+                    });
+                    $(window).scroll(function () {
+                        if ($(window).scrollTop() < 2000) {
+                            $(div).fadeOut();
+                        } else {
+                            $(div).fadeIn();
+                        }
+                    });
+                }
+                scroll_to_top("#scroll_to_top");
+            });
+        </script>
 
+
+        <div id='scroll_to_top' class='opacity'>
+            <img src="img/arrowup.png" alt="Retourner en haut">
+        </div>
         <section id="home">
             <div class="container-fluid">
                 <div class="container-fluid container-navbar navbar">
                     <div class="navbar navbar-default navbar-fixed-top navbar-custom">
-                        <div class="container">
+                        <div class="container navbarcontainer">
                             <div class="navbar-header">
                                 <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                                     <span class="icon icon-bar"></span>
@@ -58,16 +86,22 @@
                         </div>
                     </div>
                 </div>
-                <div class="container-fluid home-logo text-center">
-                    <div class="img-container text-center">
+                <div id="videoDiv" class="container-fluid home-logo text-center">
+                    <video id="videoBlock" preload="preload" id="video" autoplay="autoplay" loop="loop">
+                        <source src="video/home.webm" type="video/webm"></source>
+                        <source src="video/home.mp4" type="video/mp4"></source>
+                    </video>
+                    <div id="videoMessage">
+                        <div class="img-container text-center">
 
-                        <img class="home-img img-responsive" src="img/logo_2.png" alt="" style="border-radius: 50%; text-align: center;">
+                            <img class="home-img img-responsive" src="img/logo_2.png" alt="" style="border-radius: 50%; text-align: center;">
 
-                    </div>
-                    <div class="home-headings">
-                        <h1>Coworking La Loupe</h1>
-                        <h2>Espace de travail partagé</h2>
-                        <button class="btn">EN SAVOIR PLUS</button>
+                        </div>
+                        <div class="home-headings">
+                            <h1>Coworking La Loupe</h1>
+                            <h2>Espace de travail partagé</h2>
+                            <button class="btn btn-about"><a href="#about" class="active smoothScroll">EN SAVOIR PLUS</a></button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -76,10 +110,10 @@
             <div class="container-fluid">
                 <div class="container">
                     <div class="row">
-                        <div class="img-container col-md-4 col-sm-4 hidden-xs">
+                        <div class="img-container col-md-4 hidden-sm hidden-xs">
                             <img class="img-responsive" src="img/logo_3.png" alt="Logo">
                         </div>
-                        <div class="titre-container col-md-8 col-sm-8">
+                        <div class="titre-container col-md-8 col-sm-12">
                             <p class="p_accueil">Situé au pied de la gare, le « Coworking La Loupe » est un espace de travail partagé accessible
                                 à tous. Plus qu'un simple bureau, c'est un lieu de travail ouvert, destiné aux entrepreneurs
                                 indépendants, télétravailleurs et salariés itinérants. Il vous permet de travailler dans
@@ -94,7 +128,7 @@
             <div class="container-fluid">
                 <div class="container">
                     <div class="titre-container col-md-12 col-sm-12 col-xs-12">
-                        <h1>LES ESPACES</h1>
+                        <h1>Espaces</h1>
                         <h2>Venez travailler au Coworking La Loupe, vous y trouverez :</h2>
                     </div>
                     <div class="section-group col-md-4 col-sm-4 col-xs-12">
@@ -217,10 +251,10 @@
         </section>
         <section id="booking" class="booking-container">
             <div class="container">
-                    <div class="footer_logo col-xs-12">
-<img class"img-responsive" src="img/logo_2.png" alt="Logo">
-                    </div>
-                                
+                <div class="footer_logo col-xs-12">
+                    <img class "img-responsive" src="img/logo_2.png" alt="Logo">
+                </div>
+
                 <div class="titre-container-footer col-md-12">
                     <h1>Contactez-nous</h1>
                 </div>
@@ -278,24 +312,50 @@
 
                 </div>
                 <div class="text-container-footer col-md-6 col-sm-6 col-xs-12">
-                    <p><a href="https://www.google.fr/maps?q=la+capsule+reims&amp;bav=on.2,or.r_cp.&amp;biw=1440&amp;bih=689&amp;dpr=2&amp;um=1&amp;ie=UTF-8&amp;sa=X&amp;ved=0ahUKEwjqwdqP7_PTAhUE1RoKHV-3AKwQ_AUICCgD"><i class="fa fa-map-marker contact" aria-hidden="true"></i></a>18 rue de la gare – 28240 La Loupe<br>L'espace de Coworking se trouve au 2ème étage
-                        </p>
+                    <p><a href="https://www.google.fr/maps?q=la+capsule+reims&amp;bav=on.2,or.r_cp.&amp;biw=1440&amp;bih=689&amp;dpr=2&amp;um=1&amp;ie=UTF-8&amp;sa=X&amp;ved=0ahUKEwjqwdqP7_PTAhUE1RoKHV-3AKwQ_AUICCgD"><i class="fa fa-map-marker contact" aria-hidden="true"></i></a>18
+                        rue de la gare – 28240 La Loupe<br>L'espace de Coworking se trouve au 2ème étage
+                    </p>
                     <p><i class="fa fa-clock-o contact" aria-hidden="true"></i>Du lundi au vendredi de 9h à 18h</p>
 
                     <p><i class="fa fa-phone contact" aria-hidden="true"></i>06 19 34 42 37</p>
 
                     <p><i class="fa fa-paper-plane-o contact" aria-hidden="true"></i><a href="mailto:contact@coworkinglaloupe.fr">contact@coworkinglaloupe.fr</a></p>
-                    </div>
+                </div>
             </div>
     </div>
     </section>
 
     <footer>
-        <div class="container">
-            <div class="col-md-6">
-                <p>Mentions légales</p>
+        <div class="footer-bottom">
+
+            <div class="container container-footer">
+
+                <div class="row">
+
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+                        <div class="copyright">
+
+                            © 2017 Coworking La Loupe
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+                        <div class="design">
+
+                            <a href="#">Communauté de Commune </a> | <a target="_blank" href="http://www.wildcodeschool.fr">Codé avec <span class="love">❤</span> par des Wilders</a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
-            <div class="col-md-6">Liens</div>
+
         </div>
     </footer>
 

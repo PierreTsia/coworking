@@ -454,10 +454,10 @@ text-decoration: none;
         -o-transition:  all .3s ease;
         -webkit-transition:  all .3s ease;
     }
-    .panel.price:hover{
+
+    .paneldiv:hover > .panel.price{
         position: relative;
         top:-50px;
-        
     }
     
             
@@ -501,7 +501,7 @@ text-decoration: none;
 
     .panel.price .btn:hover .panel{
         position:relative;
-        top:-50px;
+        
     }
 
 		
@@ -539,6 +539,11 @@ text-decoration: none;
     height: 80vh;
     padding-top: 70px;
     
+}
+
+.servicesbg{
+    background-image: url("img/pattern.jpg");
+    background-repeat: repeat;
 }
 
 #services .section-group {
@@ -672,3 +677,5 @@ text-decoration: none;
         visibility: hidden;
     }
 }
+
+  

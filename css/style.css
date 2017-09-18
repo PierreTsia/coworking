@@ -27,17 +27,18 @@ body {
 }
 h1, h2{
     font-family: 'Lato', sans-serif;
-    margin-bottom: 36px;
     text-align: center;
 }
 
 h1{
     font-weight: 900;
+    margin-bottom: 16px;
 }
 
 h2{
     font-size: 24px;
     font-weight: 200;
+    margin-bottom: 26px;
 }
 
 p{
@@ -262,7 +263,11 @@ p{
     color: #35383a;
     font-weight: 900;
 }
+.navbar {
 
+    min-height: 0;
+    margin-bottom: 0;
+}
 
 
 .home-img {
@@ -394,12 +399,22 @@ text-decoration: none;
 }
 
 #about .img-responsive{
-        max-height: 350px;
+        max-height: 300px;
         padding: 36px;
         padding-right: 50px;
 }
 
 /*ESPACES*/
+.parallax { 
+    background-image: url("../img/parallax.png");
+    height: 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
 #espaces {
     background-color: rgba(217, 223, 222, 0.2);
     background-image: url('../img/dots-pattern.png') ;
@@ -418,6 +433,7 @@ text-decoration: none;
 
 #espaces h3 {
     font-weight: 900;
+    line-height: 34px;
 }
 
 
@@ -457,10 +473,18 @@ text-decoration: none;
 
     .paneldiv:hover > .panel.price{
         position: relative;
-        top:-50px;
+        top:-20px;
     }
     
-            
+    .bglogo_a{
+        z-index: -98;
+        position: absolute
+    }
+    .bglogo_b{
+        z-index: -99;
+        position: absolute;
+    }
+    
     .panel.price>.panel-heading{
         text-shadow:0px 1px 0px rgba(50,50,50, .6);
     }
@@ -535,23 +559,13 @@ text-decoration: none;
        
 /*SERVICES*/
 
-#services .container-fluid .container {
-    height: 80vh;
-    padding-top: 70px;
-    
-}
-
-.servicesbg{
-    background-image: url("img/pattern.jpg");
-    background-repeat: repeat;
-}
-
 #services .section-group {
     margin-top: 50px; 
 }
 
 #services h3{
     font-weight: 900;
+    line-height: 34px;
 }
 
 .section-group {
@@ -678,4 +692,11 @@ text-decoration: none;
     }
 }
 
+
+@media screen and (max-width: 880px) {
+    #feedback{
+        visibility: hidden;
+        display:none;
+    }
+}
   

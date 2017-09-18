@@ -15,14 +15,20 @@
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/section-scroll.css">
+    <link rel="stylesheet" href="css/aos.css" />
+    
+      <script type="text/javascript" src="js/aos.js"></script>
 
 
     <!-- -----Scripts----- -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js">
         < script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" >
     </script>
     <script type="text/javascript" src="https://cdn.rawgit.com/mikeflynn/egg.js/master/egg.min.js"></script>
-
+    <script>
+    AOS.init({
+      disable: 'mobile'
+    });
+  </script>
     <script type="text/javascript">
         var egg = new Egg();
         egg.addCode("p,a,u,l", function() {
@@ -188,7 +194,8 @@ Your browser does not support the video tag.
                 <div class="container">
                     <div class="row">
                         <div class="img-container col-md-4 hidden-sm hidden-xs">
-                            <img class="img-responsive" src="img/logo_3.png" alt="Logo">
+                            <img data-aos="slide-right" data-aos-delay="1200" class="bglogo_a img-responsive" src="img/logo_a.png" alt="Logo">
+                            <img data-aos="fade" data-aos-delay="800" class="bglogo_b img-responsive" src="img/logo_b.png" alt="Logo">
                         </div>
                         <div class="titre-container col-md-8 col-sm-12">
                             <p class="p_accueil">Situé au pied de la gare, le « Coworking La Loupe » est un espace de travail partagé accessible
@@ -209,7 +216,7 @@ Your browser does not support the video tag.
                         <h2>Venez travailler au Coworking La Loupe, vous y trouverez :</h2>
                     </div>
                     <div class="section-group col-md-4 col-sm-4 col-xs-12">
-                        <img class="icon-espaces icon-espaces-first" src="img/ico/shared-desk.svg" alt="">
+                        <img data-aos="fade-up" data-aos-delay="300" class="icon-espaces icon-espaces-first" src="img/ico/shared-desk.svg" alt="">
                         <div class="text-container">
                             <h3>Open-Space</h3>
                             <p>Une salle toute équipée de 35m2</p>
@@ -218,19 +225,19 @@ Your browser does not support the video tag.
 
                     <div class="section-group col-md-4 col-sm-4 col-xs-12">
                         <div class="img-container">
-                            <img class="icon-espaces" src="img/ico/long-sofa.svg" alt="">
+                            <img data-aos="fade-up" data-aos-delay="300" class="icon-espaces" src="img/ico/long-sofa.svg" alt="">
                         </div>
                         <div class="text-container">
-                            <h3>Espace détente</h3>
-                            <p>Un espace de repos idéal pour les petites (ou grandes !) pauses</p>
+                            <h3>Espace Détente</h3>
+                            <p>Un espace de repos idéal<br>pour les petites (ou grandes !) pauses</p>
                         </div>
                     </div>
 
                     <div class="section-group col-md-4 col-sm-4 col-xs-12">
-                        <img class="icon-espaces" src="img/ico/meeting.svg" alt="">
+                        <img data-aos="fade-up" data-aos-delay="300" class="icon-espaces" src="img/ico/meeting.svg" alt="">
                         <div class="text-container">
-                            <h3>Salle de réunion</h3>
-                            <p>Pouvant accueillir 10 personnes, équipée pour la visioconférence</p>
+                            <h3>Salle de Réunion</h3>
+                            <p>Pouvant accueillir 10 personnes<br>et équipée pour la visioconférence</p>
                         </div>
                     </div>
 
@@ -240,32 +247,32 @@ Your browser does not support the video tag.
             </div>
         </section>
         <section id="services">
-        <div class="container-fluid servicesbg">
-            <div class="container servicesbg">
+        <div class="container-fluid parallax">
+            <div class="container">
                 <div class="titre-container col-md-12">
                     <h1>Services</h1>
                     <h2>Pour travailler dans les meilleures conditions</h2>
                 </div>
 
                 <div class="section-group col-md-4 col-sm-4 col-xs-12">
-                    <i class="icon-services fa fa-wifi" aria-hidden="true"></i>
+                    <i data-aos="fade-up" data-aos-delay="300" class="icon-services fa fa-wifi" aria-hidden="true"></i>
                     <div class="text-container">
-                        <h3>Connexion internet haut débit Wifi</h3>
+                        <h3>Connexion internet<br>et Wifi haut débit</h3>
                     </div>
                 </div>
 
                 <div class="section-group col-md-4 col-sm-4 col-xs-12">
-                    <i class="icon-services fa fa-print" aria-hidden="true"></i>
+                    <i data-aos="fade-up" data-aos-delay="300" class="icon-services fa fa-print" aria-hidden="true"></i>
                     <div class="text-container">
-                        <h3>Imprimante / Photocopieur / Scan</h3>
+                        <h3>Imprimante, Photocopieur<br>et Scan</h3>
 
                     </div>
                 </div>
 
                 <div class="section-group col-md-4 col-sm-4 col-xs-12">
-                    <i class="icon-services fa fa-cutlery" aria-hidden="true"></i>
+                    <i data-aos="fade-up" data-aos-delay="300" class="icon-services fa fa-cutlery" aria-hidden="true"></i>
                     <div class="text-container">
-                        <h3>Espace déjeuner / cuisine équipée</h3>
+                        <h3>Espace déjeuner<br>et Cuisine équipée</h3>
 
                     </div>
                 </div>
@@ -287,7 +294,7 @@ Your browser does not support the video tag.
                     <div class="paneldiv col-xs-12 col-sm-12 col-md-4 col-lg-4">
 
                         <!-- PRICE ITEM -->
-                        <div class="panel price panel-white">
+                        <div data-aos="fade-up" data-aos-delay="300" class="panel price panel-white">
                             <div class="panel-heading arrow_box text-center">
                                 <h3>Hebdomadaire</h3>
                             </div>
@@ -312,7 +319,7 @@ Your browser does not support the video tag.
                     <div class="paneldiv col-xs-12 col-sm-12 col-md-4 col-lg-4">
 
                         <!-- PRICE ITEM -->
-                        <div class="panel price panel-white">
+                        <div data-aos="fade-up" data-aos-delay="300" class="panel price panel-white">
                             <div class="panel-heading arrow_box text-center">
                                 <h3>Quotidien</h3>
                             </div>
@@ -337,7 +344,7 @@ Your browser does not support the video tag.
                     <div class="paneldiv col-xs-12 col-sm-12 col-md-4 col-lg-4">
 
                         <!-- PRICE ITEM -->
-                        <div class="panel price panel-white">
+                        <div data-aos="fade-up" data-aos-delay="300" class="panel price panel-white">
                             <div class="panel-heading arrow_box text-center">
                                 <h3>Mensuel</h3>
                             </div>

@@ -19,8 +19,31 @@
 
     <!-- -----Scripts----- -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js">
-        < script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" >
+        < script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" >
     </script>
+    <script type="text/javascript" src="https://cdn.rawgit.com/mikeflynn/egg.js/master/egg.min.js"></script>
+
+    <script type="text/javascript">
+        var egg = new Egg();
+        egg.addCode("p,a,u,l", function() {
+          jQuery('#egggif').fadeIn(500, function() {
+            window.setTimeout(function() { jQuery('#egggif').hide(); }, 15000);
+          });
+        }, "konami-code");
+        egg.addHook(function(){
+          console.log("Hook called for: " + this.activeEgg.keys);
+          console.log(this.activeEgg.metadata);
+        });
+        egg.listen();
+      </script>
+  <style type="text/css">
+    #egggif {position: fixed;top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto; display: none; z-index:100000; }
+  </style>
+
     <!-- <link rel="stylesheet" href="css/temp.css">-->
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -38,9 +61,11 @@
 </head>
 
 <body>
-
+        <video id="egggif" width="640" height="480" controls loop="loop">
+  <source src="video/paul.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
     <div id="wrapper" class="wrapper-container-fluid">
-        
         <script type="text/javascript">
             $(document).ready(function () {
                 function scroll_to_top(div) {
@@ -82,7 +107,7 @@
                             <a class="close" href="#">×</a>
 
                             <div class="content" id="quickenquire">
-                                <h3 style="text-align:center">Contact</h3>
+                                <h2 style="text-align:center">Contact</h2>
                                 <form action="#">
                                     <label for="name">Nom</label>
                                     <input type="text" id="name" name="name">
@@ -90,16 +115,6 @@
                                     <input type="email" id="email" name="email">
                                     <label for="phone">Téléphone</label>
                                     <input type="phone" id="phone" name="phone">
-
-
-                                    <label for="comment">Votre Message</label>
-                                    <textarea></textarea>
-
-
-
-
-
-
                                     <label for="sujet">Sujet</label>
                                     <select id="sujet" name="sujet">
       <option value="reservation">Réservation</option>
@@ -107,7 +122,10 @@
       <option value="autre">Autre</option>
     </select>
 
-                                    <input type="submit" value="Submit">
+                                    <label for="comment">Votre Message</label>
+                                    <textarea></textarea>
+
+                                    <input type="submit" value="Envoyer">
                                 </form>
                             </div>
                         </div>
@@ -159,6 +177,7 @@
                             <h1>Coworking La Loupe</h1>
                             <h2>Espace de travail partagé</h2>
                             <button class="btn btn-about"><a href="#about" class="active smoothScroll">EN SAVOIR PLUS</a></button>
+                            
                         </div>
                     </div>
                 </div>
@@ -278,7 +297,7 @@
 
                             </ul>
                             <div class="panel-footer">
-                                <a class="btn btn-lg btn-block btn-default" href="#">RESERVEZ MAINTENANT</a>
+                                <a class="btn btn-lg btn-block btn-default" href="#">réserver</a>
                             </div>
                         </div>
                         <!-- /PRICE ITEM -->
@@ -303,7 +322,7 @@
 
                             </ul>
                             <div class="panel-footer">
-                                <a class="btn btn-lg btn-block btn-default" href="#">RESERVEZ MAINTENANT</a>
+                                <a class="btn btn-lg btn-block btn-default" href="#">réserver</a>
                             </div>
                         </div>
                         <!-- /PRICE ITEM -->
@@ -327,7 +346,7 @@
                                 <li class="list-group-item"><i class="icon-ok text-success"></i> L'offre la plus économique</li>
                             </ul>
                             <div class="panel-footer">
-                                <a class="btn btn-lg btn-block btn-default" href="#">RESERVEZ MAINTENANT</a>
+                                <a class="btn btn-lg btn-block btn-default" href="#">réserver</a>
                             </div>
                         </div>
                         <!-- /PRICE ITEM -->
@@ -353,7 +372,7 @@
         <section id="booking" class="booking-container">
             <div class="container">
                 <div class="footer_logo col-xs-12">
-                    <img class "img-responsive" src="img/logo_2.png" alt="Logo">
+                    <img class "img-responsive" src="img/logo_2.png" alt="Logo"></a>
                 </div>
 
                 <div class="titre-container-footer col-md-12">
@@ -398,13 +417,26 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
+                            <select class="form-control" id="sujet">
+                                    <option>Réservation</option>
+                                    <option>Demander un devis</option>
+                                    <option>Autre</option>
+                                  </select>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
 
                                         <textarea id="form_message" name="message" class="form-control" placeholder="Message" rows="4" required="required" data-error="Merci de nous laisser un message."></textarea>
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
-                                    <input type="submit" class="btn btn-booking btn-send" value="Envoyer">
+                                    <input type="submit" class="btn btn-booking btn-send" value="ENVOYER">
                                 </div>
                             </div>
                         </div>
@@ -414,8 +446,10 @@
                 </div>
                 <div class="text-container-footer col-md-6 col-sm-6 col-xs-12">
                     <p><a href="https://www.google.fr/maps?q=la+capsule+reims&amp;bav=on.2,or.r_cp.&amp;biw=1440&amp;bih=689&amp;dpr=2&amp;um=1&amp;ie=UTF-8&amp;sa=X&amp;ved=0ahUKEwjqwdqP7_PTAhUE1RoKHV-3AKwQ_AUICCgD"><i class="fa fa-map-marker contact" aria-hidden="true"></i></a>18
-                        rue de la gare – 28240 La Loupe<br>L'espace de Coworking se trouve au 2ème étage
-                    </p>
+                        rue de la gare – 28240 La Loupe</p>
+
+                    <p><i class="fa fa-wheelchair contact" aria-hidden="true"></i>L'espace de Coworking se trouve au 2ème étage avec ascenseur</p>
+
                     <p><i class="fa fa-clock-o contact" aria-hidden="true"></i>Du lundi au vendredi de 9h à 18h</p>
 
                     <p><i class="fa fa-phone contact" aria-hidden="true"></i>06 19 34 42 37</p>
@@ -425,8 +459,7 @@
             </div>
     </div>
     </section>
-
-    <footer>
+   <footer>
         <div class="footer-bottom">
 
             <div class="container container-footer">

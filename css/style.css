@@ -388,8 +388,14 @@ text-decoration: none;
 }
 /*ABOUT*/
 
-#about .container-fluid .container {
+.p_accueil {
+    font-size: 1.2em;
+    line-height: 2.5;
+}
 
+.em-text {
+    color: #f9a02e;
+    font-weight: 900;
 }
 
 #about .titre-container {

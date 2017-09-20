@@ -21,7 +21,7 @@
 
 
     <!-- -----Scripts----- -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" >
+        < script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" >
     </script>
     <script type="text/javascript" src="https://cdn.rawgit.com/mikeflynn/egg.js/master/egg.min.js"></script>
     <script>
@@ -198,12 +198,12 @@ Your browser does not support the video tag.
                             <img data-aos="fade" data-aos-delay="800" class="bglogo_b img-responsive" src="img/logo_b.png" alt="Logo">
                         </div>
                         <div class="titre-container col-md-8 col-sm-12">
-                            <p class="p_accueil">Situé au pied de la gare, le « Coworking La Loupe » est un espace de travail partagé accessible
+                            <p class="p_accueil">Situé au pied de la gare, le  <span class="em-text">« Coworking La Loupe »</span> est un espace de travail partagé accessible
                                 à tous. Plus qu'un simple bureau, c'est un lieu de travail ouvert, destiné aux entrepreneurs
-                                indépendants, télétravailleurs et salariés itinérants. Il vous permet de travailler dans
+                                indépendants, télétravailleurs et salariés itinérants.<br> Il vous permet de travailler dans
                                 un bureau à un tarif raisonnable et de rencontrer et échanger avec des professionnels de
-                                divers horizons. Le lieu est porté par la Communauté de communes « Terres de Perche » et
-                                la Wild Code School, l’école de développeurs web.</p>
+                                divers horizons.<br> Le lieu est porté par la <span class="em-text">Communauté de communes « Terres de Perche »</span> et
+                                la <span class="em-text">Wild Code School</span>, l’école de développeurs web.</p>
                         </div>
                     </div>
                 </div>
@@ -480,7 +480,11 @@ Your browser does not support the video tag.
 
                         <div class="copyright">
 
-                            © 2017 Coworking La Loupe
+                            © <script type="text/javascript">
+                                document.write(new Date().getFullYear());
+                                </script> Coworking La Loupe
+
+                            
 
                         </div>
 
@@ -539,7 +543,7 @@ Your browser does not support the video tag.
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="js/bootstrap-transition.js"></script>
     <script src="js/bootstrap-alert.js"></script>
     <script src="js/bootstrap-modal.js"></script>
@@ -554,8 +558,6 @@ Your browser does not support the video tag.
     <script src="js/bootstrap-typeahead.js"></script>
     <script src="js/smoothscroll.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-
-
 
 </body>
 

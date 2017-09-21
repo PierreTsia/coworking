@@ -10,67 +10,39 @@
 
     <!-- Le styles -->
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/section-scroll.css">
     <link rel="stylesheet" href="css/aos.css" />
 
-    <script type="text/javascript" src="js/aos.js"></script>
 
+    <style type="text/css">
+        #egggif {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            display: none;
+            z-index: 100000;
+        }
+    </style>
 
-    <!-- -----Scripts----- -->
-    < script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-        </script>
-        <script type="text/javascript" src="https://cdn.rawgit.com/mikeflynn/egg.js/master/egg.min.js"></script>
-        <script>
-            AOS.init({
-                disable: 'mobile'
-            });
-        </script>
-        <script type="text/javascript">
-            var egg = new Egg();
-            egg.addCode("p,a,u,l", function () {
-                jQuery('#egggif').fadeIn(500, function () {
-                    window.setTimeout(function () {
-                        jQuery('#egggif').hide();
-                    }, 15000);
-                });
-            }, "konami-code");
-            egg.addHook(function () {
-                console.log("Hook called for: " + this.activeEgg.keys);
-                console.log(this.activeEgg.metadata);
-            });
-            egg.listen();
-        </script>
-        <style type="text/css">
-            #egggif {
-                position: fixed;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                margin: auto;
-                display: none;
-                z-index: 100000;
-            }
-        </style>
+    <!-- <link rel="stylesheet" href="css/temp.css">-->
 
-        <!-- <link rel="stylesheet" href="css/temp.css">-->
-
-        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-        <!--[if lt IE 9]>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
       <script src="../assets/js/html5shiv.js"></script>
     <![endif]-->
 
-        <!-- Fav and touch icons -->
-        <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-        <link rel="manifest" href="/manifest.json">
-        <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
-        <meta name="theme-color" content="#ffffff">
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
@@ -78,26 +50,7 @@
         <source src="video/paul.mp4" type="video/mp4"> Your browser does not support the video tag.
     </video>
     <div id="wrapper" class="wrapper-container-fluid">
-        <script type="text/javascript">
-            $(document).ready(function () {
-                function scroll_to_top(div) {
-                    $(div).click(function () {
-                        $('html,body').animate({
-                            scrollTop: 0
-                        }, 'slow');
-                    });
-                    $(window).scroll(function () {
-                        if ($(window).scrollTop() < 2000) {
-                            $(div).fadeOut();
-                        } else {
-                            $(div).fadeIn();
-                        }
-                    });
-                }
-                scroll_to_top("#scroll_to_top");
-            });
-        </script>
-
+        
 
         <div id='scroll_to_top' class='opacity'>
             <img src="img/arrowup.png" alt="Retourner en haut">
@@ -204,10 +157,11 @@
                             <img data-aos="fade" data-aos-delay="800" class="bglogo_b img-responsive" src="img/logo_b.png" alt="Logo" style="opacity:0.5;">
                         </div>
                         <div class="titre-container col-md-8 col-sm-12">
-                            <p class="p_accueil">Situé au pied de la gare, le <span class="em-text">Coworking La Loupe</span> est un espace
-                                de travail partagé accessible à tous. Plus qu'un simple bureau, c'est un lieu de travail
-                                ouvert, destiné aux entrepreneurs indépendants, télétravailleurs et salariés itinérants.<br>                                Il vous permet de travailler dans un bureau à un tarif raisonnable et de rencontrer et échanger
-                                avec des professionnels de divers horizons.<br> Le lieu est porté par la <span class="em-text">Communauté de communes Terres de Perche</span>                                et la <span class="em-text">Wild Code School</span>, l’école de développeurs web.</p>
+                            <p class="p_accueil">Situé au pied de la gare, le <span class="em-text">Coworking La Loupe</span> est un espace de
+                                travail partagé accessible à tous. Plus qu'un simple bureau, c'est un lieu de travail ouvert,
+                                destiné aux entrepreneurs indépendants, télétravailleurs et salariés itinérants.<br> Il vous
+                                permet de travailler dans un bureau à un tarif raisonnable et de rencontrer et échanger avec
+                                des professionnels de divers horizons.<br> Le lieu est porté par la <span class="em-text">Communauté de communes Terres de Perche</span>                                et la <span class="em-text">Wild Code School</span>, l’école de développeurs web.</p>
                         </div>
                     </div>
                 </div>
@@ -462,8 +416,7 @@
                     <p><a href="https://www.google.fr/maps?q=la+capsule+reims&amp;bav=on.2,or.r_cp.&amp;biw=1440&amp;bih=689&amp;dpr=2&amp;um=1&amp;ie=UTF-8&amp;sa=X&amp;ved=0ahUKEwjqwdqP7_PTAhUE1RoKHV-3AKwQ_AUICCgD"><i class="fa fa-map-marker contact" aria-hidden="true"></i></a>18
                         rue de la gare – 28240 La Loupe</p>
 
-                    <p><i class="fa fa-wheelchair contact" aria-hidden="true"></i>Accès au 2ème étage
-                        avec ascenseur</p>
+                    <p><i class="fa fa-wheelchair contact" aria-hidden="true"></i>Accès au 2ème étage avec ascenseur</p>
 
                     <p><i class="fa fa-clock-o contact" aria-hidden="true"></i>Du lundi au vendredi de 9h à 18h</p>
 
@@ -544,26 +497,57 @@
     <!--WRAPPER-->
 
 
+    <script type="text/javascript" src="js/aos.js"></script>
 
 
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- -----Scripts----- -->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="js/bootstrap-transition.js"></script>
-    <script src="js/bootstrap-alert.js"></script>
-    <script src="js/bootstrap-modal.js"></script>
-    <script src="js/bootstrap-dropdown.js"></script>
-    <script src="js/bootstrap-scrollspy.js"></script>
-    <script src="js/bootstrap-tab.js"></script>
-    <script src="js/bootstrap-tooltip.js"></script>
-    <script src="js/bootstrap-popover.js"></script>
-    <script src="js/bootstrap-button.js"></script>
     <script src="js/collapse.js"></script>
-    <script src="js/bootstrap-carousel.js"></script>
-    <script src="js/bootstrap-typeahead.js"></script>
     <script src="js/smoothscroll.js"></script>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+   
+
+   <script type="text/javascript" src="https://cdn.rawgit.com/mikeflynn/egg.js/master/egg.min.js"></script>
+    <script>
+        AOS.init({
+            disable: 'mobile'
+        });
+    </script>
+    <script type="text/javascript">
+        var egg = new Egg();
+        egg.addCode("p,a,u,l", function () {
+            jQuery('#egggif').fadeIn(500, function () {
+                window.setTimeout(function () {
+                    jQuery('#egggif').hide();
+                }, 15000);
+            });
+        }, "konami-code");
+        egg.addHook(function () {
+            console.log("Hook called for: " + this.activeEgg.keys);
+            console.log(this.activeEgg.metadata);
+        });
+        egg.listen();
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            function scroll_to_top(div) {
+                $(div).click(function () {
+                    $('html,body').animate({
+                        scrollTop: 0
+                    }, 'slow');
+                });
+                $(window).scroll(function () {
+                    if ($(window).scrollTop() < 2000) {
+                        $(div).fadeOut();
+                    } else {
+                        $(div).fadeIn();
+                    }
+                });
+            }
+            scroll_to_top("#scroll_to_top");
+        });
+    </script>
+
 
 </body>
 

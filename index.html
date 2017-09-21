@@ -21,56 +21,55 @@
 
 
     <!-- -----Scripts----- -->
-    < script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-        </script>
-        <script type="text/javascript" src="https://cdn.rawgit.com/mikeflynn/egg.js/master/egg.min.js"></script>
-        <script>
-            AOS.init({
-                disable: 'mobile'
-            });
-        </script>
-        <script type="text/javascript">
-            var egg = new Egg();
-            egg.addCode("p,a,u,l", function () {
-                jQuery('#egggif').fadeIn(500, function () {
-                    window.setTimeout(function () {
-                        jQuery('#egggif').hide();
-                    }, 15000);
-                });
-            }, "konami-code");
-            egg.addHook(function () {
-                console.log("Hook called for: " + this.activeEgg.keys);
-                console.log(this.activeEgg.metadata);
-            });
-            egg.listen();
-        </script>
-        <style type="text/css">
-            #egggif {
-                position: fixed;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                margin: auto;
-                display: none;
-                z-index: 100000;
-            }
-        </style>
 
-        <!-- <link rel="stylesheet" href="css/temp.css">-->
+    <script type="text/javascript" src="https://cdn.rawgit.com/mikeflynn/egg.js/master/egg.min.js"></script>
+    <script>
+        AOS.init({
+            disable: 'mobile'
+        });
+    </script>
+    <script type="text/javascript">
+        var egg = new Egg();
+        egg.addCode("p,a,u,l", function () {
+            jQuery('#egggif').fadeIn(500, function () {
+                window.setTimeout(function () {
+                    jQuery('#egggif').hide();
+                }, 15000);
+            });
+        }, "konami-code");
+        egg.addHook(function () {
+            console.log("Hook called for: " + this.activeEgg.keys);
+            console.log(this.activeEgg.metadata);
+        });
+        egg.listen();
+    </script>
+    <style type="text/css">
+        #egggif {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            display: none;
+            z-index: 100000;
+        }
+    </style>
 
-        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-        <!--[if lt IE 9]>
+    <!-- <link rel="stylesheet" href="css/temp.css">-->
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
       <script src="../assets/js/html5shiv.js"></script>
     <![endif]-->
 
-        <!-- Fav and touch icons -->
-        <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-        <link rel="manifest" href="/manifest.json">
-        <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
-        <meta name="theme-color" content="#ffffff">
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
@@ -129,9 +128,8 @@
                                     <input type="phone" id="phone" name="phone">
                                     <label for="sujet">Sujet</label>
                                     <select id="sujet" name="sujet">
-      <option value="reservation">Réservation</option>
-      <option value="devis">Demander un devis </option>
-      <option value="autre">Autre</option>
+    <option value="reservation">Réservation</option>
+    <option value="autre">Autre</option>
     </select>
 
                                     <label for="comment">Votre Message</label>
@@ -204,10 +202,11 @@
                             <img data-aos="fade" data-aos-delay="800" class="bglogo_b img-responsive" src="img/logo_b.png" alt="Logo" style="opacity:0.5;">
                         </div>
                         <div class="titre-container col-md-8 col-sm-12">
-                            <p class="p_accueil">Situé au pied de la gare, le <span class="em-text">Coworking La Loupe</span> est un espace
-                                de travail partagé accessible à tous. Plus qu'un simple bureau, c'est un lieu de travail
-                                ouvert, destiné aux entrepreneurs indépendants, télétravailleurs et salariés itinérants.<br>                                Il vous permet de travailler dans un bureau à un tarif raisonnable et de rencontrer et échanger
-                                avec des professionnels de divers horizons.<br> Le lieu est porté par la <span class="em-text">Communauté de communes Terres de Perche</span>                                et la <span class="em-text">Wild Code School</span>, l’école de développeurs web.</p>
+                            <p class="p_accueil">Situé au pied de la gare, le <span class="em-text">Coworking La Loupe</span> est un espace de
+                                travail partagé accessible à tous. Plus qu'un simple bureau, c'est un lieu de travail ouvert,
+                                destiné aux entrepreneurs indépendants, télétravailleurs et salariés itinérants.<br> Il vous
+                                permet de travailler dans un bureau à un tarif raisonnable et de rencontrer et échanger avec
+                                des professionnels de divers horizons.<br> Le lieu est porté par la <span class="em-text">Communauté de communes Terres de Perche</span>                                et la <span class="em-text">Wild Code School</span>, l’école de développeurs web.</p>
                         </div>
                     </div>
                 </div>
@@ -462,8 +461,7 @@
                     <p><a href="https://www.google.fr/maps?q=la+capsule+reims&amp;bav=on.2,or.r_cp.&amp;biw=1440&amp;bih=689&amp;dpr=2&amp;um=1&amp;ie=UTF-8&amp;sa=X&amp;ved=0ahUKEwjqwdqP7_PTAhUE1RoKHV-3AKwQ_AUICCgD"><i class="fa fa-map-marker contact" aria-hidden="true"></i></a>18
                         rue de la gare – 28240 La Loupe</p>
 
-                    <p><i class="fa fa-wheelchair contact" aria-hidden="true"></i>Accès au 2ème étage
-                        avec ascenseur</p>
+                    <p><i class="fa fa-wheelchair contact" aria-hidden="true"></i>Accès au 2ème étage avec ascenseur</p>
 
                     <p><i class="fa fa-clock-o contact" aria-hidden="true"></i>Du lundi au vendredi de 9h à 18h</p>
 
@@ -549,7 +547,7 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
     <script src="js/bootstrap-transition.js"></script>
     <script src="js/bootstrap-alert.js"></script>
     <script src="js/bootstrap-modal.js"></script>

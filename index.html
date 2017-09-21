@@ -16,61 +16,67 @@
     <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/section-scroll.css">
     <link rel="stylesheet" href="css/aos.css" />
-    
-      <script type="text/javascript" src="js/aos.js"></script>
+
+    <script type="text/javascript" src="js/aos.js"></script>
 
 
     <!-- -----Scripts----- -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" >
-    </script>
-    <script type="text/javascript" src="https://cdn.rawgit.com/mikeflynn/egg.js/master/egg.min.js"></script>
-    <script>
-    AOS.init({
-      disable: 'mobile'
-    });
-  </script>
-    <script type="text/javascript">
-        var egg = new Egg();
-        egg.addCode("p,a,u,l", function() {
-          jQuery('#egggif').fadeIn(500, function() {
-            window.setTimeout(function() { jQuery('#egggif').hide(); }, 15000);
-          });
-        }, "konami-code");
-        egg.addHook(function(){
-          console.log("Hook called for: " + this.activeEgg.keys);
-          console.log(this.activeEgg.metadata);
-        });
-        egg.listen();
-      </script>
-  <style type="text/css">
-    #egggif {position: fixed;top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto; display: none; z-index:100000; }
-  </style>
+    < script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+        </script>
+        <script type="text/javascript" src="https://cdn.rawgit.com/mikeflynn/egg.js/master/egg.min.js"></script>
+        <script>
+            AOS.init({
+                disable: 'mobile'
+            });
+        </script>
+        <script type="text/javascript">
+            var egg = new Egg();
+            egg.addCode("p,a,u,l", function () {
+                jQuery('#egggif').fadeIn(500, function () {
+                    window.setTimeout(function () {
+                        jQuery('#egggif').hide();
+                    }, 15000);
+                });
+            }, "konami-code");
+            egg.addHook(function () {
+                console.log("Hook called for: " + this.activeEgg.keys);
+                console.log(this.activeEgg.metadata);
+            });
+            egg.listen();
+        </script>
+        <style type="text/css">
+            #egggif {
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+                display: none;
+                z-index: 100000;
+            }
+        </style>
 
-    <!-- <link rel="stylesheet" href="css/temp.css">-->
+        <!-- <link rel="stylesheet" href="css/temp.css">-->
 
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
       <script src="../assets/js/html5shiv.js"></script>
     <![endif]-->
 
-    <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
-    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="theme-color" content="#ffffff">
+        <!-- Fav and touch icons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+        <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
-        <video id="egggif" width="640" height="480" controls loop="loop">
-  <source src="video/paul.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
+    <video id="egggif" width="640" height="480" controls loop="loop">
+        <source src="video/paul.mp4" type="video/mp4"> Your browser does not support the video tag.
+    </video>
     <div id="wrapper" class="wrapper-container-fluid">
         <script type="text/javascript">
             $(document).ready(function () {
@@ -183,7 +189,7 @@ Your browser does not support the video tag.
                             <h1>Coworking La Loupe</h1>
                             <h2>Espace de travail partagé</h2>
                             <button class="btn btn-about"><a href="#about" class="active smoothScroll">EN SAVOIR PLUS</a></button>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -195,15 +201,13 @@ Your browser does not support the video tag.
                     <div class="row">
                         <div class="img-container col-md-4 hidden-sm hidden-xs">
                             <img data-aos="slide-right" data-aos-delay="1200" class="bglogo_a img-responsive" src="img/logo_a.png" alt="Logo">
-                            <img data-aos="fade" data-aos-delay="800" class="bglogo_b img-responsive" src="img/logo_b.png" alt="Logo">
+                            <img data-aos="fade" data-aos-delay="800" class="bglogo_b img-responsive" src="img/logo_b.png" alt="Logo" style="opacity:0.5;">
                         </div>
                         <div class="titre-container col-md-8 col-sm-12">
-                            <p class="p_accueil">Situé au pied de la gare, le « Coworking La Loupe » est un espace de travail partagé accessible
-                                à tous. Plus qu'un simple bureau, c'est un lieu de travail ouvert, destiné aux entrepreneurs
-                                indépendants, télétravailleurs et salariés itinérants. Il vous permet de travailler dans
-                                un bureau à un tarif raisonnable et de rencontrer et échanger avec des professionnels de
-                                divers horizons. Le lieu est porté par la Communauté de communes « Terres de Perche » et
-                                la Wild Code School, l’école de développeurs web.</p>
+                            <p class="p_accueil">Situé au pied de la gare, le <span class="em-text">Coworking La Loupe</span> est un espace
+                                de travail partagé accessible à tous. Plus qu'un simple bureau, c'est un lieu de travail
+                                ouvert, destiné aux entrepreneurs indépendants, télétravailleurs et salariés itinérants.<br>                                Il vous permet de travailler dans un bureau à un tarif raisonnable et de rencontrer et échanger
+                                avec des professionnels de divers horizons.<br> Le lieu est porté par la <span class="em-text">Communauté de communes Terres de Perche</span>                                et la <span class="em-text">Wild Code School</span>, l’école de développeurs web.</p>
                         </div>
                     </div>
                 </div>
@@ -247,36 +251,36 @@ Your browser does not support the video tag.
             </div>
         </section>
         <section id="services">
-        <div class="container-fluid parallax">
-            <div class="container">
-                <div class="titre-container col-md-12">
-                    <h1>Services</h1>
-                    <h2>Pour travailler dans les meilleures conditions</h2>
-                </div>
+            <div class="container-fluid parallax">
+                <div class="container">
+                    <div class="titre-container col-md-12">
+                        <h1>Services</h1>
+                        <h2>Pour travailler dans les meilleures conditions</h2>
+                    </div>
 
-                <div class="section-group col-md-4 col-sm-4 col-xs-12">
-                    <i data-aos="fade-up" data-aos-delay="300" class="icon-services fa fa-wifi" aria-hidden="true"></i>
-                    <div class="text-container">
-                        <h3>Connexion internet<br>et Wifi haut débit</h3>
+                    <div class="section-group col-md-4 col-sm-4 col-xs-12">
+                        <i data-aos="fade-up" data-aos-delay="300" class="icon-services fa fa-wifi" aria-hidden="true"></i>
+                        <div class="text-container">
+                            <h3>Connexion internet<br>et Wifi haut débit</h3>
+                        </div>
+                    </div>
+
+                    <div class="section-group col-md-4 col-sm-4 col-xs-12">
+                        <i data-aos="fade-up" data-aos-delay="300" class="icon-services fa fa-print" aria-hidden="true"></i>
+                        <div class="text-container">
+                            <h3>Imprimante, Photocopieur<br>et Scan</h3>
+
+                        </div>
+                    </div>
+
+                    <div class="section-group col-md-4 col-sm-4 col-xs-12">
+                        <i data-aos="fade-up" data-aos-delay="300" class="icon-services fa fa-cutlery" aria-hidden="true"></i>
+                        <div class="text-container">
+                            <h3>Espace déjeuner<br>et Cuisine équipée</h3>
+
+                        </div>
                     </div>
                 </div>
-
-                <div class="section-group col-md-4 col-sm-4 col-xs-12">
-                    <i data-aos="fade-up" data-aos-delay="300" class="icon-services fa fa-print" aria-hidden="true"></i>
-                    <div class="text-container">
-                        <h3>Imprimante, Photocopieur<br>et Scan</h3>
-
-                    </div>
-                </div>
-
-                <div class="section-group col-md-4 col-sm-4 col-xs-12">
-                    <i data-aos="fade-up" data-aos-delay="300" class="icon-services fa fa-cutlery" aria-hidden="true"></i>
-                    <div class="text-container">
-                        <h3>Espace déjeuner<br>et Cuisine équipée</h3>
-
-                    </div>
-                </div>
-            </div>
             </div>
         </section>
 
@@ -319,7 +323,7 @@ Your browser does not support the video tag.
                     <div class="paneldiv col-xs-12 col-sm-12 col-md-4 col-lg-4">
 
                         <!-- PRICE ITEM -->
-                        <div data-aos="fade-up" data-aos-delay="300" class="panel price panel-white">
+                        <div id="opex" data-aos="fade-up" data-aos-delay="300" class="panel price panel-white">
                             <div class="panel-heading arrow_box text-center">
                                 <h3>Quotidien</h3>
                             </div>
@@ -331,8 +335,8 @@ Your browser does not support the video tag.
                                 <li class="list-group-item"><i class="icon-ok text-success"></i> L'offre la plus flexible</li>
 
                             </ul>
-                            <div class="panel-footer">
-                                <a class="btn btn-lg btn-block btn-default smoothScroll" href="#booking">réserver</a>
+                            <div class="panelblue panel-footer">
+                                <a class="btn btn-lg btn-block btn-default smoothScroll btnblue" href="#booking">réserver</a>
                             </div>
                         </div>
                         <!-- /PRICE ITEM -->
@@ -389,7 +393,7 @@ Your browser does not support the video tag.
                     <h1>Contactez-nous</h1>
                 </div>
 
-                <div class="text-container-footer col-md-6 col-sm-6 col-xs-12">
+                <div class="text-container-footer col-md-6 col-sm-6 col-xs-12" data-aos="fade-right" data-aos-delay="300">
 
                     <form id="contact-form" method="post" action="contact.php" role="form">
 
@@ -427,7 +431,7 @@ Your browser does not support the video tag.
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
-                            <select class="form-control" id="sujet">
+                                        <select class="form-control" id="sujet">
                                     <option>Réservation</option>
                                     <option>Demander un devis</option>
                                     <option>Autre</option>
@@ -454,11 +458,12 @@ Your browser does not support the video tag.
                     </form>
 
                 </div>
-                <div class="text-container-footer col-md-6 col-sm-6 col-xs-12">
+                <div class="text-container-footer col-md-6 col-sm-6 col-xs-12 contactinfo" data-aos="fade-left" data-aos-delay="300">
                     <p><a href="https://www.google.fr/maps?q=la+capsule+reims&amp;bav=on.2,or.r_cp.&amp;biw=1440&amp;bih=689&amp;dpr=2&amp;um=1&amp;ie=UTF-8&amp;sa=X&amp;ved=0ahUKEwjqwdqP7_PTAhUE1RoKHV-3AKwQ_AUICCgD"><i class="fa fa-map-marker contact" aria-hidden="true"></i></a>18
                         rue de la gare – 28240 La Loupe</p>
 
-                    <p><i class="fa fa-wheelchair contact" aria-hidden="true"></i>L'espace de Coworking se trouve au 2ème étage avec ascenseur</p>
+                    <p><i class="fa fa-wheelchair contact" aria-hidden="true"></i>Accès au 2ème étage
+                        avec ascenseur</p>
 
                     <p><i class="fa fa-clock-o contact" aria-hidden="true"></i>Du lundi au vendredi de 9h à 18h</p>
 
@@ -469,7 +474,7 @@ Your browser does not support the video tag.
             </div>
     </div>
     </section>
-   <footer>
+    <footer>
         <div class="footer-bottom">
 
             <div class="container container-footer">
@@ -480,7 +485,12 @@ Your browser does not support the video tag.
 
                         <div class="copyright">
 
-                            © 2017 Coworking La Loupe
+                            ©
+                            <script type="text/javascript">
+                                document.write(new Date().getFullYear());
+                            </script> Coworking La Loupe
+
+
 
                         </div>
 
@@ -490,7 +500,7 @@ Your browser does not support the video tag.
 
                         <div class="design">
 
-                            <a href="#">Communauté de Commune </a> | <a target="_blank" href="http://www.wildcodeschool.fr">Codé avec <span class="love">❤</span> par des Wilders</a>
+                            <a href="#">Communauté de Communes </a> | <a target="_blank" href="http://www.wildcodeschool.fr">Made with <span class="love"> ❤ </span> by Wilders</a>
 
                         </div>
 
@@ -539,7 +549,7 @@ Your browser does not support the video tag.
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="js/bootstrap-transition.js"></script>
     <script src="js/bootstrap-alert.js"></script>
     <script src="js/bootstrap-modal.js"></script>
@@ -554,8 +564,6 @@ Your browser does not support the video tag.
     <script src="js/bootstrap-typeahead.js"></script>
     <script src="js/smoothscroll.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-
-
 
 </body>
 

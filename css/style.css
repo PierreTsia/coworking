@@ -45,6 +45,8 @@ p{
     font-family: 'Open Sans', sans-serif;
 }
 
+
+
 /*STICKY BUTTON*/
 
 
@@ -388,8 +390,14 @@ text-decoration: none;
 }
 /*ABOUT*/
 
-#about .container-fluid .container {
+.p_accueil {
+    font-size: 1.2em;
+    line-height: 2.5;
+}
 
+.em-text {
+    color: #f9a02e;
+    font-weight: 900;
 }
 
 #about .titre-container {
@@ -473,7 +481,8 @@ text-decoration: none;
 
     .paneldiv:hover > .panel.price{
         position: relative;
-        top:-20px;
+        transform: translateY(-1em);
+        transition: 0.2s;
     }
     
     .bglogo_a{
@@ -532,7 +541,7 @@ text-decoration: none;
 	
 		.price.panel-white>.panel-heading {
 			color: #fff;
-			background-color: #f9a02e;
+			background-color: #F07C00;
 			border-color: #B7B7B7;
 			border-bottom: 1px solid #B7B7B7;
 		}
@@ -592,6 +601,7 @@ text-decoration: none;
 .titre-container-footer h1 {
    color: white;
    text-align: center;
+   margin-bottom:50px;
 }
 
 .text-container-footer{
@@ -700,3 +710,33 @@ text-decoration: none;
     }
 }
   
+.contactinfo{
+    font-size:24px;
+    line-height: 58px;
+}
+
+#opex>.panel-heading{
+
+    background-color: #1fa597;
+}
+
+#opex .lead{
+    
+    color: #1fa597;
+    }
+
+.btnblue{
+    background-color: #1fa597!important;
+}
+.panelblue {
+    background-color: rgba(0, 199, 189, 0.14)!important;
+
+}
+#opex{
+    box-shadow: 1px 1px 20px #888888;
+}
+
+.navbar-default .navbar-nav > li:hover > a{
+    color:#f9a02e;
+
+}
